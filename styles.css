@@ -98,6 +98,22 @@ button {
   margin: 0 auto;
 }
 
+/* GAME TEXT + GIF ROW */
+.game-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap; /* makes it mobile friendly */
+}
+
+/* MINION GIF */
+.minion-gif {
+  width: 120px;
+  height: auto;
+  border-radius: 15px;
+}
+
 section {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 20px;
