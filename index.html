@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Valentine ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- PASSWORD LOCK -->
+  <div id="password-screen" class="screen">
+    <div class="card">
+      <h1>Enter the date we first met</h1>
+      <input type="text" id="pass" placeholder="DD/MM/YYYY" autocomplete="off">
+      <button id="openBtn">Open</button>
+      <p class="hint">(Hint: Our first day ❤️)</p>
+    </div>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div id="game-screen" class="screen hidden">
+    <div class="card">
+      <h1>
+        Hey <span class="name">Vireika Shanker Raj Ayanger</span> 💖
+        <br><br>
+        Will you be my girlfriend officially? 🥺
+      </h1>
+
+      <div class="btn-row">
+        <button id="yesBtn">Yes 💘</button>
+        <button id="noBtn">No 😭</button>
+      </div>
+
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="main-content" class="hidden">
+
+    <!-- Falling Hearts -->
+    <div id="heart-container"></div>
+
+    <!-- Welcome -->
+    <section id="welcome">
+      <h1>For Vireika 💕</h1>
+      <p>From Sahilan — my Valentine, then, now, and always.</p>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline">
+      <h2>Our Story</h2>
+      <ul>
+        <li>First met — 01 January 2025</li>
+        <li>First Valentine’s — 14 February 2025</li>
+        <li>Today — a new surprise 💝</li>
+      </ul>
+    </section>
+
+    <!-- Music (Autoplay after password) -->
+    <audio id="bg-music" loop>
+      <source src="favsong.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Love Letter -->
+    <section id="letter">
+      <h2>Your Letter</h2>
+      <button onclick="openLetter()">Open Your Letter</button>
+      <div id="letter-text" class="hidden">
+        <p>Hey Vireika ❤️</p>
+        <p>You know, I always thought “Every Breath You Take” was about love…
+          but now I hear it and think of you — not in a dramatic way, just in a
+          “wherever you are, that’s the best place in the world” kind of way.</p>
+
+        <p>From the very first day — 01 January — my heart knew something special
+          was happening. You make me laugh, make me think, and make ordinary days
+          feel like something worth remembering.</p>
+
+        <p>So here we are — another Valentine’s, another memory to make, and
+          hopefully many more to come. I adore you — truly, sincerely, and a little
+          bit endlessly 😄💖.</p>
+
+        <p>Always, <br> Sahilan</p>
+      </div>
+    </section>
+
+    <!-- Gift Unboxing -->
+    <section id="unbox">
+      <h2>Your Surprise</h2>
+      <div id="gift-box" onclick="openGift()">🎁 Click to Unbox!</div>
+      <img id="gift-img" src="longchamp_pouch.jpg" class="hidden" alt="Your Pouch">
+      <p id="gift-text" class="hidden">Can’t wait to see you open this in real life 💕</p>
+    </section>
+
+    <!-- Final -->
+    <section id="finale" class="hidden">
+      <h2>Will you be my Valentine again?</h2>
+      <button onclick="showConfetti()">Yes ❤️</button>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
