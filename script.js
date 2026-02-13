@@ -97,6 +97,11 @@ function moveButton() {
   noBtn.style.left = `${x}px`;
   noBtn.style.top = `${y}px`;
 }
+//start of new add
+function openAgenda() {
+  document.getElementById("agenda-reveal").classList.remove("hidden");
+}
+//end of new add
 
 // NO button always escapes
 noBtn.addEventListener("mouseover", moveButton);
